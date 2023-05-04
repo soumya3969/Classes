@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #c2e8f1;
+    background-image: url(./gift-logo.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    color: red;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: red;
+}
+table{
+    border: 1px solid salmon;
+
+}

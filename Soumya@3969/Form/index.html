@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 15px;
+            /* border: 1px solid black; */
+        }
+        .main{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        div{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <center>
+            <h2>Registration Form</h2>
+        </center>
+        <form action="">
+            <div>
+                <label for="Name">Enter Full Name</label>
+                <input type="text" name="Name" id="">
+            </div>
+            <div>
+                <label for="Email">Enter Your Email</label>
+                <input type="email" name="" id="">
+            </div>
+            <div>
+                <label for="password">Enter Your Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <div>
+                <label for="Confirm psw">Confirm Your Password</label>
+                <input type="password" name="" id="">
+            </div>
+
+
+
+            <div>
+                Enter your Gender:
+                <input type="radio" name="gen" id="">Male
+                <input type="radio" name="gen" id="">Female
+                <input type="radio" name="gen" id="">Others
+
+            </div>
+            <div>
+                Select Course:
+                <select name="branch" id="">
+                    <option value="MCA">MCA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="Diploma">Diploma</option>
+                </select>
+            </div>
+            Enter your Address:<textarea name="add" id="" cols="20" rows="5" maxlength="50"></textarea>
+                <!-- <br> -->
+            <button>Sign-Up</button>
+        </form>
+    </div>
+</body>
+
+</html>

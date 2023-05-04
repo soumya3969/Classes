@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String And Math</title>
+    <script>
+      // length property
+      let str1 = "Soumya";
+      document.writeln(str1.length); //output=6
+
+      // CharAt()
+      let str2 = "Soumya";
+      document.writeln("<br/>" + str2.charAt(3)); //output=m
+
+      // concat();
+      let str31 = "i'm ";
+      let str32 = "Soumya ";
+      document.writeln("<br/>" + str31.concat(str32));
+
+      // IndexOf and LastIndexOf
+      let str4 = "Independence";
+      document.writeln("<br/>" + str4.indexOf("p")); //output=4
+
+      document.writeln("<br/>" + str4.indexOf("e")); //if there is repeate of same value it takes the first index o/p=3
+      document.writeln("<br/>" + str4.lastIndexOf("e")); //last index of repeating value o/p=11
+
+      //Replace property
+      let str5 = "Hello World";
+      document.writeln("<br/>" + str5.replace("hyy", "replaced"));
+
+      // slice property
+      document.write("<br/>" + str5.slice(0, 5)); //output=hello
+      //substr
+      document.write("<br/>" + str5.substr(6, 10)); //output=world
+      //   toUppercase
+      let str6 = str5.toUpperCase();
+      document.write("<br/>" + str6); //output= HELLO WORLD
+      // toLowerCase
+      document.write("<br/>" + str6.toLowerCase()); //output =hello world
+    </script>
+  </head>
+  <body>
+    <div>
+
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

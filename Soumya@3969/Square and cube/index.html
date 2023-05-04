@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Square and cube</title>
+    <script>
+        function Cube() {
+            let x=parseInt(prompt("Enter a number to Find its cube"));
+            alert("cube of "+x+" = "+Math.pow(x,3))
+            
+        }
+        function Sqr() {
+            let x=parseInt(prompt("Enter a number to Find its squre"));
+            alert("Square of "+x+" = "+Math.pow(x,2))
+            
+        }
+    </script>
+    <style>
+        .main{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: #a76e06;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 3rem;
+            margin: 2rem;
+            
+        }
+        .btn{
+            font-family: sans-serif;
+            font-size: 20px;
+            border: 2px solid #0e42d3;
+            color: #0e42d3;
+            background-color: #09d688;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <h1><center>-:SQUARE AND CUBE CALCULATOR :-</center></h1>
+    <div class="btns">
+        <input type="button" value="Cube" onclick="Cube()" class="btn">
+        <input type="button" value="Square" onclick="Sqr()" class="btn">
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<title>Image-Mapping</title>
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		.heading{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-style: oblique;
+		}
+		body{
+			background-color: #3bb48ca1;
+			margin: 0 3rem;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="./gift-logo.png" alt="logo" class="logo">
+		<ul>
+			<li><a href="#" >Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact us</a></li>
+			
+		</ul>
+		<button class="btn">Log In</Button>
+		
+	</nav>
+	<hr>
+		<div class="heading"><h1>Image-Mapping</h1></div>
+	<div class="Hero-Section">
+		
+		<div class="Hero-Left">
+			<img src="./india-political-map.gif" alt="map" usemap="map1" width="500">
+			<map name="map1">
+				<area shape="poly" coords="430,449, 530,470, 460,550, 365,585, 390,495" href="www.google.com" alt="google" target="_blank">
+				<area shape="circle" coords="337,300,44" href="www.youtube.com" alt="yt">
+
+			</map>
+		</div>
+		<div id="Hero-Right">
+			<p class="Hero-Para">
+				<ol class="tt">
+					<li class="t1">Using image mapping we can access another file or webpage in out webpage.</li>
+					<li>In mapping there are aria tag to assign the mapping area inside the image</li>
+				</ol>
+
+			</p>	
+		</div>
+		
+	</div>
+	
+
+
+</body>
+</html>
