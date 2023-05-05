@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        background: black;
+      }
+
+      .clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #17D4FE;
+        font-size: 60px;
+        font-weight: 600;
+        font-family: 'Orbitron',sans-serif;
+        letter-spacing: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+    <script>
+      function showTime() {
+        var date = new Date();
+        var h = date.getHours();
+        console.log(h);
+        var m = date.getMinutes();
+        console.log(m);
+        var s = date.getSeconds();
+        console.log(s);
+        var session = "AM";
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+    </script>
+  </body>
+</html>
