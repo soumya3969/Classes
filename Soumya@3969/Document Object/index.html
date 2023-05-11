@@ -1,22 +1,18 @@
 <!doctype html>
-	<head>
-		<title>JS Document Methods Example</title>
-	</head>
-	<body>
-		<h3>Document Methods Example</h3>
-		<p id="demo">It Will change</p>
-        <p class="cls">hyy</p>
-        <input type="button" value="Ok">
-        <input type="checkbox" name="chk" id="chk">
 
-		<script>
+<head>
+	<title>JS Document Methods Example</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
 
-			document.write("Hello" +"<br>");
-			document.getElementById("demo").innerHTML = "Set by ID";
-			document.querySelector(".cls").innerHTML="by class";
-            document.getElementsByName("chk").innerHTML="hobby";
+<body>
+	<div class="input">
+		<input class="input__field" id="password" required />
+		<label for="password" class="input__lebel">password</label>
+		<span class="input__icon-wrapper">
+			<i class="input__icon ri-eye-off-line"></i>
+		</span>
+	</div>
+</body>
 
-            
-		</script>
-	</body>
 </html>
