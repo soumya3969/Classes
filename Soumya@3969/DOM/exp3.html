@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function total() {
+            let all=document.getElementsByName("gender");
+            alert("Total gender "+all.length)
+        }
+    </script>
+    <form>
+        Male: <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female">
+        Others: <input type="radio" name="gender" value="Others">
+        <input type="button" value="Total Gender" onclick="total()">
+    </form>
+</body>
+</html>
