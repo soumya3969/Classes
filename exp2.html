@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        function cube() {
+            let number =document.getElementById("num").value;
+            alert(Math.pow(number,3));
+        }
+    </script>
+    <form>
+        Enter a number: <input type="number" name="num" id="num"/> <br>
+        <input type="button" value="Cube" onclick="cube()">
+    </form>
+  </body>
+</html>
